@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::categoria-noticia.categoria-noticia",
       "inversedBy": "sub_categoria_noticias"
+    },
+    "noticias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::noticia.noticia",
+      "mappedBy": "sub_categoria_noticia"
     }
   }
 }

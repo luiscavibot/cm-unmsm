@@ -33,11 +33,12 @@
       "type": "string"
     },
     "banner": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -94,6 +95,12 @@
         }
       },
       "type": "string"
+    },
+    "sub_categoria_noticia": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-categoria-noticia.sub-categoria-noticia",
+      "inversedBy": "noticias"
     }
   }
 }
