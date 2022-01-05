@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_evento_organizados",
+  "info": {
+    "singularName": "tipo-evento-organizado",
+    "pluralName": "tipo-evento-organizados",
+    "displayName": "tipoEventoOrganizado"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "evento": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::evento.evento",
+      "mappedBy": "tipo_evento_organizado"
+    }
+  }
+}

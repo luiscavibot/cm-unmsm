@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centro_estudios",
+  "info": {
+    "singularName": "centro-estudio",
+    "pluralName": "centro-estudios",
+    "displayName": "centro_estudio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "educacion_continua": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::educacion-continua.educacion-continua",
+      "inversedBy": "centro_estudio"
+    }
+  }
+}

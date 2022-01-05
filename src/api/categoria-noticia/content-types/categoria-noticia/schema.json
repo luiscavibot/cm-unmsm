@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_noticias",
+  "info": {
+    "singularName": "categoria-noticia",
+    "pluralName": "categoria-noticias",
+    "displayName": "categoriaNoticia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "sub_categoria_noticias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-categoria-noticia.sub-categoria-noticia",
+      "mappedBy": "categoria_noticia"
+    }
+  }
+}

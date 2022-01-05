@@ -1,0 +1,130 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educacion_continuas",
+  "info": {
+    "singularName": "educacion-continua",
+    "pluralName": "educacion-continuas",
+    "displayName": "EducacionContinua",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imgPrevisualizacion": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "imgPortada": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "inicioClases": {
+      "type": "datetime"
+    },
+    "finClases": {
+      "type": "datetime"
+    },
+    "duracion": {
+      "type": "string"
+    },
+    "inversion": {
+      "type": "string"
+    },
+    "nombreDocente": {
+      "type": "string"
+    },
+    "descripcionDocente": {
+      "type": "string"
+    },
+    "publicoObjetivo": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "string"
+    },
+    "horario": {
+      "type": "string"
+    },
+    "numeroVacantes": {
+      "type": "integer"
+    },
+    "pdfSyllabus": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "correo": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "anexo": {
+      "type": "string"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "twitterUrl": {
+      "type": "string"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "areas_formacions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::areas-formacion.areas-formacion",
+      "mappedBy": "educacion_continua"
+    },
+    "sintesis": {
+      "type": "string"
+    },
+    "tipo_formacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-formacion.tipo-formacion",
+      "inversedBy": "educacion_continua"
+    },
+    "centro_estudio": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::centro-estudio.centro-estudio",
+      "inversedBy": "educacion_continua"
+    },
+    "modalidad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modalidad.modalidad",
+      "inversedBy": "educacion_continua"
+    }
+  }
+}

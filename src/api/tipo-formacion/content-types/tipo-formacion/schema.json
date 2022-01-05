@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_formacions",
+  "info": {
+    "singularName": "tipo-formacion",
+    "pluralName": "tipo-formacions",
+    "displayName": "tipo_formacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "educacion_continua": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::educacion-continua.educacion-continua",
+      "inversedBy": "tipo_formacion"
+    }
+  }
+}

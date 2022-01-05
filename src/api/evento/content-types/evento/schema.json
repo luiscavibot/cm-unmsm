@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "evento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "fechaInicio": {
+      "type": "datetime"
+    },
+    "lugar": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "bannerCabecera": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "etiquetas": {
+      "type": "string"
+    },
+    "visitas": {
+      "type": "integer"
+    },
+    "link_inscripcion": {
+      "type": "string"
+    },
+    "redesSociales": {
+      "type": "string"
+    },
+    "tipo_evento_organizado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-evento-organizado.tipo-evento-organizado",
+      "inversedBy": "evento"
+    },
+    "areas_formacion": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::areas-formacion.areas-formacion",
+      "inversedBy": "eventos"
+    }
+  }
+}

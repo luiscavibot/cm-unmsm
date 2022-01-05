@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas_formacions",
+  "info": {
+    "singularName": "areas-formacion",
+    "pluralName": "areas-formacions",
+    "displayName": "areasFormacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "eventos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::evento.evento",
+      "mappedBy": "areas_formacion"
+    },
+    "educacion_continua": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::educacion-continua.educacion-continua",
+      "inversedBy": "areas_formacions"
+    }
+  }
+}

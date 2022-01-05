@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rtvs",
+  "info": {
+    "singularName": "rtv",
+    "pluralName": "rtvs",
+    "displayName": "rtv"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoDescripcion": {
+      "type": "string"
+    },
+    "imgVideo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "urlVideo": {
+      "type": "string"
+    }
+  }
+}
