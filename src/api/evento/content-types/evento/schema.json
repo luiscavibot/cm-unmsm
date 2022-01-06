@@ -54,14 +54,14 @@
       "target": "api::areas-formacion.areas-formacion",
       "inversedBy": "eventos"
     },
-    "fechaInicio": {
-      "type": "datetime"
-    },
-    "fechaFin": {
-      "type": "datetime"
-    },
     "visitas": {
       "type": "integer"
+    },
+    "fechaDeInicio": {
+      "type": "datetime"
+    },
+    "fechaFinal": {
+      "type": "datetime"
     }
   }
 }
