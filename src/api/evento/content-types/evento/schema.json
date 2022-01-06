@@ -19,9 +19,6 @@
       "type": "uid",
       "targetField": "nombre"
     },
-    "fechaInicio": {
-      "type": "datetime"
-    },
     "lugar": {
       "type": "string"
     },
@@ -38,9 +35,6 @@
     },
     "etiquetas": {
       "type": "string"
-    },
-    "visitas": {
-      "type": "integer"
     },
     "link_inscripcion": {
       "type": "string"
@@ -60,8 +54,14 @@
       "target": "api::areas-formacion.areas-formacion",
       "inversedBy": "eventos"
     },
+    "fechaInicio": {
+      "type": "datetime"
+    },
     "fechaFin": {
       "type": "datetime"
+    },
+    "visitas": {
+      "type": "integer"
     }
   }
 }
