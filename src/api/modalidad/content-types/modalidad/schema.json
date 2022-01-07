@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::educacion-continua.educacion-continua",
-      "inversedBy": "modalidad"
+      "mappedBy": "modalidad"
     }
   }
 }
