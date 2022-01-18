@@ -77,7 +77,8 @@
           "localized": true
         }
       },
-      "type": "biginteger"
+      "type": "biginteger",
+      "default": "0"
     },
     "cuerpo": {
       "pluginOptions": {
