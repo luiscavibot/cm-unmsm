@@ -30,11 +30,11 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "text"
     },
     "banner": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
@@ -95,7 +95,7 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "text"
     },
     "sub_categoria_noticia": {
       "type": "relation",
