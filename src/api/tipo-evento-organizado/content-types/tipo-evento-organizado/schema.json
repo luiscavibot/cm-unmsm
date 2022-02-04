@@ -14,9 +14,9 @@
     "nombre": {
       "type": "string"
     },
-    "evento": {
+    "eventos": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::evento.evento",
       "mappedBy": "tipo_evento_organizado"
     }

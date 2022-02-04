@@ -44,9 +44,9 @@
     },
     "tipo_evento_organizado": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::tipo-evento-organizado.tipo-evento-organizado",
-      "inversedBy": "evento"
+      "inversedBy": "eventos"
     },
     "areas_formacion": {
       "type": "relation",
