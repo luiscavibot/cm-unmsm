@@ -102,6 +102,14 @@
       "relation": "manyToOne",
       "target": "api::sub-categoria-noticia.sub-categoria-noticia",
       "inversedBy": "noticias"
+    },
+    "destacado": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean"
     }
   }
 }
