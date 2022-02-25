@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonio",
     "pluralName": "testimonios",
-    "displayName": "testimonio"
+    "displayName": "testimonio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "text"
     },
     "extracto": {
-      "type": "string"
+      "type": "text"
     },
     "imgTestimoniante": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "nombre": {
       "type": "string"
