@@ -28,6 +28,16 @@
     },
     "nombre": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "facultad": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::facultad.facultad",
+      "inversedBy": "testimonios"
     }
   }
 }

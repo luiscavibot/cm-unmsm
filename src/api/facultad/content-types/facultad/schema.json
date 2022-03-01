@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facultads",
+  "info": {
+    "singularName": "facultad",
+    "pluralName": "facultads",
+    "displayName": "facultad"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "testimonios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonio.testimonio",
+      "mappedBy": "facultad"
+    }
+  }
+}
