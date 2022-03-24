@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alertas_rtvs",
+  "info": {
+    "singularName": "alertas-rtv",
+    "pluralName": "alertas-rtvs",
+    "displayName": "alertasTransmisiónRTV",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "horaInicio": {
+      "type": "time",
+      "required": true
+    },
+    "horaFinal": {
+      "type": "time",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
