@@ -35,6 +35,10 @@
     "fecha": {
       "type": "date",
       "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
     }
   }
 }
