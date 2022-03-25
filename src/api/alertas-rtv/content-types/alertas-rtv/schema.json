@@ -33,7 +33,7 @@
       ]
     },
     "fecha": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "link": {
