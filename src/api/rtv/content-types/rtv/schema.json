@@ -4,7 +4,8 @@
   "info": {
     "singularName": "rtv",
     "pluralName": "rtvs",
-    "displayName": "rtv"
+    "displayName": "rtv",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,18 @@
       "type": "string"
     },
     "imgVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "urlVideo": {
       "type": "string"
+    },
+    "destacado": {
+      "type": "boolean"
     }
   }
 }
