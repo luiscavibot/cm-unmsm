@@ -27,7 +27,11 @@
       "type": "string"
     },
     "destacado": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
+    },
+    "fecha": {
+      "type": "datetime"
     }
   }
 }
