@@ -2,14 +2,11 @@ module.exports = ({ env }) => ({
   connection: {
     client: "mysql",
     connection: {
-      host: env(
-        "DATABASE_HOST",
-        "oaci.cp4gcmpufrc5.sa-east-1.rds.amazonaws.com"
-      ),
-      port: env.int("DATABASE_PORT", 3306),
-      database: env("DATABASE_NAME", "unmsm-v2"),
-      user: env("DATABASE_USERNAME", "admin"),
-      password: env("DATABASE_PASSWORD", "oaci12345"),
+      host: env("DATABASE_HOST"),
+      port: env.int("DATABASE_PORT"),
+      database: env("DATABASE_NAME"),
+      user: env("DATABASE_USERNAME"),
+      password: env("DATABASE_PASSWORD"),
       ssl: env.bool("DATABASE_SSL", true),
     },
   },

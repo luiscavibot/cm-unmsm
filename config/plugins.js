@@ -5,9 +5,9 @@ module.exports = ({ env }) => ({
       providerOptions: {
         accessKeyId: env("AWS_ACCESS_KEY_ID"),
         secretAccessKey: env("AWS_ACCESS_SECRET"),
-        region: "us-east-2",
+        region: env("AWS_REGION"),
         params: {
-          Bucket: "biologia-unmsm",
+          Bucket: env("S3_BUCKET_NAME"),
         },
       },
     },
