@@ -4,7 +4,8 @@
   "info": {
     "singularName": "prueba",
     "pluralName": "pruebas",
-    "displayName": "prueba"
+    "displayName": "prueba",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,21 @@
   "attributes": {
     "texto": {
       "type": "richtext"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ImagenWhatsApp": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
