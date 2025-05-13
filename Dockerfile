@@ -43,5 +43,5 @@
     USER node
     
     EXPOSE 1337
-    CMD ["node", "dist/main.js"]
+    CMD ["npm", "start"]
     
