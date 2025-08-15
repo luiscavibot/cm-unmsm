@@ -1,5 +1,5 @@
 # ---------- build stage ----------
-    FROM node:16 AS build
+    FROM node:16-bullseye AS build
 
     # Paquetes que sí necesitas para compilar dependencias nativas
     RUN apt-get update && \
@@ -26,7 +26,7 @@
     RUN npm run build
     
     # ---------- runtime stage ----------
-    FROM node:16
+    FROM node:16-bullseye
     
     RUN apt-get update && \
         apt-get install -y --no-install-recommends libvips-dev && \

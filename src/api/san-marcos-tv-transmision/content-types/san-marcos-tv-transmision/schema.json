@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "san_marcos_tv_transmisions",
+  "info": {
+    "singularName": "san-marcos-tv-transmision",
+    "pluralName": "san-marcos-tv-transmisions",
+    "displayName": "San Marcos TV - Transmisión",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mostrar": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "horaInicio": {
+      "type": "time",
+      "required": true
+    },
+    "horaFin": {
+      "type": "time"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
