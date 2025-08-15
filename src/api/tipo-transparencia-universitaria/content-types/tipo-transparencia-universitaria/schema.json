@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos_transparencia_universitaria",
+  "info": {
+    "singularName": "tipo-transparencia-universitaria",
+    "pluralName": "tipos-transparencia-universitaria",
+    "displayName": "Tipo - Transparencia Universitaria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "documentos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documento-transparencia-universitaria.documento-transparencia-universitaria",
+      "mappedBy": "tipo"
+    }
+  }
+}
